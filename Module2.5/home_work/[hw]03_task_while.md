@@ -27,12 +27,17 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("Введите число от 1 до 9: "))
+factor_1 = 1
+factor_2 = 1
 
----
-
+while factor_1 <= n:
+    while factor_2<=n:
+        print(factor_2*factor_1, end=" ")
+        factor_2+=1
+    print("")
+    factor_2 = 1
+    factor_1 += 1
 <details>
 <summary>Подсказка-1</summary>
 Для решения задачи вам понадобятся вложенные циклы.
