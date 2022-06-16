@@ -35,7 +35,12 @@ n = 12
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cost = 9.99
+n = 12
 
+total = 1
+
+while total <= n:
+    price = cost * total
+    print(total, "ед.", price, "рублей")
+    total += 1
