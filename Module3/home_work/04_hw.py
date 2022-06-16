@@ -5,3 +5,18 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+needed_value = "s"
+print("Для окончания программы введите", needed_value)
+input_value = input("Введите число: ")
+
+my_list = []
+
+while needed_value != input_value:
+    if int(input_value) >= 0:
+        n = int(input_value) ** 0.5  # искомое число float
+        if n % 1 == 0:  # проверка условия добавления в список
+            my_list.append(int(n))
+    input_value = input("Введите число: ")
+
+print("Ваш список:", my_list)
