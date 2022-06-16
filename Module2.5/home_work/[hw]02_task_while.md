@@ -17,9 +17,12 @@
 
 ### Решение задачи
 
-```python
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
-```
+if b>a:
+    a,b=b,a
+while a >= b:
+    if b % 5 == 0:
+        print(b)
+    b += 1
