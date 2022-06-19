@@ -14,3 +14,14 @@
 #    #
 #    #
 ######
+
+a = int(input("a:"))
+
+count = 1
+while count <= a:
+    if count == 1 or count == a:
+        print("#" * a)
+        count += 1
+    else:
+        print("#"," "*(a-2), "#")
+        count += 1
