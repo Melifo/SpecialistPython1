@@ -30,4 +30,12 @@
 # 19 189.81 Rub.
 # 20 199.8 Rub.
 
-# TODO: your code here
+price = float(input("Введите цену:"))
+qantity = int(input("Введите количество:"))
+
+count = 1
+
+while count <= qantity:
+    price_of_item = count * price
+    print(f"Цена за {count} ед. товара - {price_of_item:.2f} руб.")
+    count += 1
