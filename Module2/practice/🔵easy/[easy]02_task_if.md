@@ -17,11 +17,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+money = round(float(input("Сколько у вас денег? :")), 2)
+price = round(float(input("Стоимость покупки? :")), 2)
 
----
+if money >= price:
+    print(f"У вас остаётся {(money - price):.2f} руб.")
+else:
+    print("У вас недостаточно средств.")
+
 
 ### Данные для самопроверки
 
