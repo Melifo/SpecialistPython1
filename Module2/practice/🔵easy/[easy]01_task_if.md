@@ -14,8 +14,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+number = int(input("Введите число для проверки на кратность 3 и 5 :"))
+if number % 3 == 0 or number % 5 == 0:
+    print("Число кратно")
+else:
+    print("Число не является кратным")
 ```
 
 ---
