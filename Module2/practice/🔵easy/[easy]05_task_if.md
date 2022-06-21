@@ -15,11 +15,21 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+print("Давайте проверим треугольник.")
 
----
+side_1 = int(input("Введите 1 сторону:"))
+side_2 = int(input("Введите 2 сторону:"))
+side_3 = int(input("Введите 3 сторону:"))
+
+if side_1 + side_2 > side_3 and side_2 + side_3 > side_1 and side_1 + side_3 > side_2:
+    if side_1 == side_2 == side_3:
+        print("Треугольник равносторонний")
+    elif side_1 == side_2 or side_2 == side_3 or side_3 == side_1:
+        print("Треугольник равнобедренный")
+    else:
+        print("Треугольник не является равнобедренным")
+else:
+    print("Не существует. Придумайте другой")
 
 ### Данные для самопроверки
 
