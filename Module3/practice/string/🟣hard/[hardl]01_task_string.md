@@ -16,8 +16,14 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
-```
 
----
+min_len = 5
+total = 0
 
+text_list = text.split(" ")
+
+for word in text_list:
+    if len(word) > min_len:
+        total += 1
+
+print("Слов длиной больше 5 букв-",total)
