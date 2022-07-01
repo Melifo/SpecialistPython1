@@ -33,11 +33,14 @@ n = 6
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
-# TODO: you code here...
-```
-
+with open("read_write_txt/pyramid.txt", "a", encoding="utf-8") as f:
+    n = int(input("n: "))
+    count = 1
+    max_len = 2 * n - 1  # каждый ряд считается так
+    while count <= n:
+        f.write(f'{"*" * (2 * count - 1):^{max_len}}\n')
+        count += 1
+f.close()
 ---
 <details>
 <summary>Подсказка-1</summary>
