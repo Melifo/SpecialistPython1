@@ -18,9 +18,19 @@
 ```python
 summa = 0
 with open("data/info.txt", "r") as f:
-    pass
 
-print(f"Сумма чисел = {summa}")
+    summa = 0
+
+    for line in f:
+        try:
+            line = int(line)
+            summa += int(line)
+        except:
+            line = 0
+with open("data/info.txt", "a", encoding="utf-8") as f:
+    f.write(f"Сумма чисел = {summa}" + "\n")
+f.close()
+
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
 ```
